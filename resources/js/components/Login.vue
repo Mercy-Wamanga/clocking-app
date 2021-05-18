@@ -1,31 +1,43 @@
 <style scoped>
-section{
-    margin-top: 40%;
-}
+
 .card{
    height:300px;  
 }
 .card-body{
-    padding:30px;
+    
     height:200px;
+}
+/* .t{
+  padding:100px;
+  margin:100px;
+} */
+
+.gap{
+  margin:10%;
+}
+
+.form-card{
+  margin-top:5%;
 }
 </style>
 
 <template>
 
 <div class="card w-25 position-absolute top-50 start-50 translate-middle" style="width: 18rem;">
-  <div class="card-body d-grid gap-3">
+  <div class="card-body gap">
+    <!-- d-grid gap-3 -->
     
-    <h6 class="card-subtitle mb-2 text-muted fw-bolder h3-font-size text-center fs-3">Sign In</h6>
-      <form action="#" class="login-form">
-            <div class="form-group p-2 bg-light">
-            <input type="text" class="form-control rounded-left" placeholder="Username" required>
+    <h6 class="card-subtitle text-muted fw-bolder h3-font-size text-center fs-3">Sign In</h6>
+    <hr>
+      <form action="#" class="login-form bg-light">
+            <div class="form-group p-2 bg-light form-card">
+            <input type="text" class="form-control rounded-left t" placeholder="Username" required>
             </div>
-            <div class="form-group d-flex p-2 bg-light ">
-            <input type="password" class="form-control rounded-left" placeholder="Password" required>
+            <div class="form-group d-flex p-2 bg-light">
+            <input type="password" class="form-control rounded-left t" placeholder="Password" required>
             </div>
             <div class="form-group p-2 bg-light d-grid gap-2 d-md-flex justify-content-md-end">
-            <button type="submit" class=" btn btn-info me-md-1 rounded submit text-light fs-6">Login To Clocking</button>
+            <button type="submit" class=" btn btn-info me-md-1 rounded submit text-light fs-6 ">Login To Clocking</button>
             </div>
            
 </form>

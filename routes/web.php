@@ -20,3 +20,18 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+
+Route::get('/users', function () {
+    return view('users');
+});
+
+
+Route::get('/logout', function () {
+    return view('welcome');
+});
+
+
+Route::get('dashboard-users', function () {
+    return view('dashboard-users');
+});

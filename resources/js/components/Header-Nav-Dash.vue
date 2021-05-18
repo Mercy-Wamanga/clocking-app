@@ -8,7 +8,9 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav position-absolute top-0 end-0">
        
-        <a class="nav-link text-white" href="/login">login</a>
+        <a class="nav-link text-white" href="">Report</a>
+        <a class="nav-link text-white" href="">Users</a>
+        <a class="nav-link text-white" href="/logout">logout</a>
        
       </div>
     </div>
@@ -23,9 +25,9 @@
         }
     }
 </script>
-<style scoped>
-.navbar-nav {
-  margin-right: 40px;
-}
 
+<style scoped>
+.navbar-nav{
+  margin-right: 50px;
+}
 </style>
