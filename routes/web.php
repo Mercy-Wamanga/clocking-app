@@ -17,9 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
+//Route::get('/login', [UserAuthController::class, 'login'])->name('login');
+Route::get('/login', 'AuthController@getLogin');
+
+Route::post('/login', 'AuthController@postLogin')->name('login');
+
+Route::post('/addUser', 'AuthController@postUser');
+
 
 
 Route::get('/users', function () {
@@ -35,3 +39,9 @@ Route::get('/logout', function () {
 Route::get('dashboard-users', function () {
     return view('dashboard-users');
 });
+
+Route::get('dashboard-reports', function () {
+    return view('dashboard-report');
+});
+
+Route::resource('/dashboard-users/time','TimeController'); 

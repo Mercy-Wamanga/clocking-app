@@ -26,7 +26,8 @@ Vue.component('main-image', require('./components/Main-Image.vue').default);
 Vue.component('login', require('./components/Login.vue').default);
 Vue.component('header-nav-dash', require('./components/Header-Nav-Dash.vue').default);
 Vue.component('main-dash', require('./components/Main-Dash.vue').default);
-
+Vue.component('main-report', require('./components/Main-Report.vue').default);
+Vue.component('main-users', require('./components/Main-Users.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

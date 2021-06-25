@@ -17,7 +17,7 @@
        <div id="app">
      
        <header-nav-dash></header-nav-dash>
-       <main-users></main-users>
+       <main-dash></main-dash>
    
        </div>
 
